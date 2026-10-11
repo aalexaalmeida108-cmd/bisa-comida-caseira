@@ -3,153 +3,363 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Bisa Comida Caseira — Comida de verdade em Fortaleza</title>
-  <meta name="description" content="Bisa Comida Caseira: almoço e jantar caseiro no Cais do Porto, Fortaleza-CE. Nota 4,9 no Google. Peça pelo WhatsApp." />
+  <title>Bisa Comida Caseira — Almoço e jantar caseiro em Fortaleza</title>
+  <meta name="description" content="Bisa Comida Caseira no Cais do Porto, Fortaleza-CE. Comida caseira feita no dia, nota 4,9 no Google. Peça pelo WhatsApp." />
   <meta name="robots" content="noindex, nofollow" />
-  <link rel="stylesheet" href="style.css" />
+  <meta name="theme-color" content="#1e1611" />
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🍲%3C/text%3E%3C/svg%3E" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "name": "Bisa Comida Caseira",
+    "servesCuisine": "Caseira",
+    "priceRange": "$$",
+    "telephone": "+5585988083844",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "R. São Bernardo do Campo, 396 — Cais do Porto",
+      "addressLocality": "Fortaleza",
+      "addressRegion": "CE",
+      "postalCode": "60180-710",
+      "addressCountry": "BR"
+    },
+    "geo": { "@type": "GeoCoordinates", "latitude": -3.7221673, "longitude": -38.4742621 }
+  }
+  </script>
 </head>
 <body>
-  <header class="topbar">
-    <div class="container topbar__inner">
-      <a class="brand" href="#topo">
-        <span class="brand__mark">Bisa</span>
-        <span class="brand__sub">Comida Caseira</span>
-      </a>
-      <nav class="nav">
-        <a href="#cardapio">Cardápio</a>
-        <a href="#sobre">Sobre</a>
-        <a href="#contato">Contato</a>
-        <a class="btn btn--wa btn--sm" href="https://wa.me/5585988083844?text=Ol%C3%A1%2C%20Bisa!%20Quero%20fazer%20um%20pedido." target="_blank" rel="noopener">Pedir no WhatsApp</a>
-      </nav>
-    </div>
-  </header>
 
-  <section id="topo" class="hero">
-    <div class="hero__overlay"></div>
-    <div class="container hero__content">
-      <p class="eyebrow">Cais do Porto · Fortaleza-CE</p>
-      <h1>Comida caseira de verdade,<br>feita no tempero da Bisa</h1>
-      <p class="hero__lead">Almoço e jantar fresquinhos, com aquele gostinho de casa. Peça direto pelo WhatsApp — sem app, sem taxa de entrega extra.</p>
-      <div class="hero__cta">
-        <a class="btn btn--wa" href="https://wa.me/5585988083844?text=Ol%C3%A1%2C%20Bisa!%20Quero%20fazer%20um%20pedido." target="_blank" rel="noopener">Pedir no WhatsApp</a>
-        <a class="btn btn--ghost" href="#cardapio">Ver o cardápio</a>
+<header class="nav" id="nav">
+  <div class="container nav__in">
+    <a class="brand" href="#topo" aria-label="Bisa Comida Caseira — início">
+      <span class="brand__mark">Bisa</span>
+      <span class="brand__sub">Comida Caseira</span>
+    </a>
+
+    <nav class="menu" id="menu" aria-label="Menu principal">
+      <a href="#cardapio">Cardápio</a>
+      <a href="#sobre">A casa</a>
+      <a href="#avaliacoes">Avaliações</a>
+      <a href="#contato">Contato</a>
+      <a class="btn btn--wa btn--sm menu__cta" href="https://wa.me/5585988083844?text=Ol%C3%A1%2C%20Bisa!%20Quero%20fazer%20um%20pedido." target="_blank" rel="noopener">
+        <svg class="ico" viewBox="0 0 32 32" aria-hidden="true"><path fill="currentColor" d="M16 3C9.4 3 4 8.4 4 15c0 2.3.6 4.4 1.8 6.3L4 29l7.9-1.8c1.8 1 3.9 1.6 6.1 1.6 6.6 0 12-5.4 12-12S22.6 3 16 3zm0 21.8c-1.9 0-3.7-.5-5.3-1.5l-.4-.2-4.7 1.1 1.2-4.5-.3-.4A9.7 9.7 0 016.2 15C6.2 9.6 10.6 5.2 16 5.2S25.8 9.6 25.8 15 21.4 24.8 16 24.8zm5.4-7.2c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.7.9-.9 1.1-.2.2-.3.2-.6.1-1.4-.7-2.4-1.3-3.3-2.9-.3-.4.3-.4.8-1.3.1-.2 0-.4 0-.5s-.7-1.6-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.3 5.2 4.6 1.9.8 2.7.9 3.6.8.6-.1 1.7-.7 1.9-1.4.2-.7.2-1.3.2-1.4-.1-.1-.3-.2-.6-.3z"/></svg>
+        Pedir no WhatsApp
+      </a>
+    </nav>
+
+    <a class="btn btn--wa btn--sm nav__cta" href="https://wa.me/5585988083844?text=Ol%C3%A1%2C%20Bisa!%20Quero%20fazer%20um%20pedido." target="_blank" rel="noopener">
+      <svg class="ico" viewBox="0 0 32 32" aria-hidden="true"><path fill="currentColor" d="M16 3C9.4 3 4 8.4 4 15c0 2.3.6 4.4 1.8 6.3L4 29l7.9-1.8c1.8 1 3.9 1.6 6.1 1.6 6.6 0 12-5.4 12-12S22.6 3 16 3zm0 21.8c-1.9 0-3.7-.5-5.3-1.5l-.4-.2-4.7 1.1 1.2-4.5-.3-.4A9.7 9.7 0 016.2 15C6.2 9.6 10.6 5.2 16 5.2S25.8 9.6 25.8 15 21.4 24.8 16 24.8zm5.4-7.2c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.7.9-.9 1.1-.2.2-.3.2-.6.1-1.4-.7-2.4-1.3-3.3-2.9-.3-.4.3-.4.8-1.3.1-.2 0-.4 0-.5s-.7-1.6-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.3 5.2 4.6 1.9.8 2.7.9 3.6.8.6-.1 1.7-.7 1.9-1.4.2-.7.2-1.3.2-1.4-.1-.1-.3-.2-.6-.3z"/></svg>
+      Pedir no WhatsApp
+    </a>
+
+    <button class="burger" id="burger" aria-expanded="false" aria-controls="menu" aria-label="Abrir menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main>
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="topo">
+    <div class="hero__bg" style="background-image:url('img/prato.jpg')"></div>
+    <div class="hero__scrim"></div>
+    <div class="container hero__in">
+      <span class="pill reveal">Cais do Porto · Fortaleza — CE</span>
+      <h1 class="reveal">Comida caseira <em>de verdade</em>,<br>no tempero da Bisa</h1>
+      <p class="hero__lead reveal">Almoço e jantar feitos no dia, do jeitinho que se faz em casa. Você pede pelo WhatsApp e recebe quentinho — sem app e sem taxa de entrega extra.</p>
+      <div class="hero__cta reveal">
+        <a class="btn btn--wa btn--lg" href="https://wa.me/5585988083844?text=Ol%C3%A1%2C%20Bisa!%20Quero%20fazer%20um%20pedido." target="_blank" rel="noopener">
+          <svg class="ico" viewBox="0 0 32 32" aria-hidden="true"><path fill="currentColor" d="M16 3C9.4 3 4 8.4 4 15c0 2.3.6 4.4 1.8 6.3L4 29l7.9-1.8c1.8 1 3.9 1.6 6.1 1.6 6.6 0 12-5.4 12-12S22.6 3 16 3zm0 21.8c-1.9 0-3.7-.5-5.3-1.5l-.4-.2-4.7 1.1 1.2-4.5-.3-.4A9.7 9.7 0 016.2 15C6.2 9.6 10.6 5.2 16 5.2S25.8 9.6 25.8 15 21.4 24.8 16 24.8zm5.4-7.2c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.7.9-.9 1.1-.2.2-.3.2-.6.1-1.4-.7-2.4-1.3-3.3-2.9-.3-.4.3-.4.8-1.3.1-.2 0-.4 0-.5s-.7-1.6-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.3 5.2 4.6 1.9.8 2.7.9 3.6.8.6-.1 1.7-.7 1.9-1.4.2-.7.2-1.3.2-1.4-.1-.1-.3-.2-.6-.3z"/></svg>
+          Pedir no WhatsApp
+        </a>
+        <a class="btn btn--ghost btn--lg" href="#cardapio">Ver o cardápio</a>
       </div>
-      <div class="hero__rating">
-        <span class="stars">★★★★★</span>
-        <strong>4,9</strong> no Google Maps
+      <ul class="hero__meta reveal">
+        <li><span class="stars">★★★★★</span> <strong>4,9</strong> no Google</li>
+        <li>Aberto até 23:00</li>
+        <li>Pedido em 1 toque</li>
+      </ul>
+    </div>
+    <a class="hero__scroll" href="#cardapio" aria-label="Ir para o cardápio"></a>
+  </section>
+
+  <!-- ============ FAIXA DE DIFERENCIAIS ============ -->
+  <section class="strip">
+    <div class="container strip__in">
+      <div class="strip__item">
+        <span class="strip__ico">🌡️</span>
+        <div><strong>Feito no dia</strong><small>Tempero fresco, todo dia</small></div>
+      </div>
+      <div class="strip__item">
+        <span class="strip__ico">⭐</span>
+        <div><strong>Nota 4,9</strong><small>No Google Maps</small></div>
+      </div>
+      <div class="strip__item">
+        <span class="strip__ico">💬</span>
+        <div><strong>Pede no zap</strong><small>Sem app, sem taxa</small></div>
+      </div>
+      <div class="strip__item">
+        <span class="strip__ico">📍</span>
+        <div><strong>Cais do Porto</strong><small>Retirada ou entrega</small></div>
       </div>
     </div>
   </section>
 
+  <!-- ============ CARDÁPIO ============ -->
   <section id="cardapio" class="section">
     <div class="container">
-      <h2 class="section__title">Destaques da casa</h2>
-      <p class="section__sub">Prato fresquinhO, porção generosa e preço justo. Uma amostra do que você encontra na Bisa.</p>
-      <div class="cards">
-        <article class="card">
-          <img src="img/feijoada.jpg" alt="Feijoada completa" loading="lazy" />
-          <div class="card__body">
+      <div class="sec-head reveal">
+        <span class="eyebrow">Cardápio</span>
+        <h2>Os campeões da casa</h2>
+        <p>Prato servido com mão cheia, tempero na medida e aquele acompanhamento que não cabe no prato. Veja o mais pedido de quem já provou.</p>
+      </div>
+
+      <div class="dishes">
+        <article class="dish reveal">
+          <div class="dish__media">
+            <img src="img/prato.jpg" alt="Prato feito com arroz, feijão e frango grelhado" loading="lazy" />
+            <span class="dish__price">R$ 29<small>,00</small></span>
+          </div>
+          <div class="dish__body">
+            <span class="dish__tag">Prato do dia</span>
+            <h3>Prato Feito da Bisa</h3>
+            <p>Arroz soltinho, feijão feito na hora, carne ou frango grelhado, salada, farofa e ovo.</p>
+          </div>
+        </article>
+
+        <article class="dish reveal">
+          <div class="dish__media">
+            <img src="img/feijoada.jpg" alt="Feijoada completa servida em mesa" loading="lazy" />
+            <span class="dish__price">R$ 39<small>,00</small></span>
+          </div>
+          <div class="dish__body">
+            <span class="dish__tag dish__tag--hot">Mais pedido</span>
             <h3>Feijoada da Bisa</h3>
-            <p>Feijão preto encorpado, carnes selecionadas, arroz, couve, farofa e laranja.</p>
+            <p>Feijão preto encorpado com carnes selecionadas, acompanhada de arroz, couve, farofa e laranja.</p>
           </div>
         </article>
-        <article class="card">
-          <img src="img/carreteiro.jpg" alt="Arroz carreteiro" loading="lazy" />
-          <div class="card__body">
+
+        <article class="dish reveal">
+          <div class="dish__media">
+            <img src="img/carreteiro.jpg" alt="Arroz carreteiro servido em tigela" loading="lazy" />
+            <span class="dish__price">R$ 34<small>,00</small></span>
+          </div>
+          <div class="dish__body">
+            <span class="dish__tag">Caseiro</span>
             <h3>Arroz Carreteiro</h3>
-            <p>Arroz soltinho com carne desfiada e tempero da casa — aquele que abraça.</p>
+            <p>Arroz com carne de sol desfiada, tempero da casa e cheiro-verde. Aquele prato que aquece a alma.</p>
           </div>
         </article>
-        <article class="card">
-          <img src="img/frango.jpg" alt="Frango assado com acompanhamentos" loading="lazy" />
-          <div class="card__body">
+
+        <article class="dish reveal">
+          <div class="dish__media">
+            <img src="img/frango.jpg" alt="Frango assado dourado com legumes" loading="lazy" />
+            <span class="dish__price">R$ 36<small>,00</small></span>
+          </div>
+          <div class="dish__body">
+            <span class="dish__tag">Todas as semanas</span>
             <h3>Frango Assado</h3>
-            <p>Frango dourado e suculento com os acompanhamentos do dia. Perfeito pra almoço.</p>
+            <p>Frango dourado e suculento assado com legumes, servido com os acompanhamentos do dia.</p>
           </div>
         </article>
       </div>
-      <p class="section__note">Os pratos acima são sugestões — o cardápio muda todo dia. Chame no WhatsApp e confira o menu de hoje.</p>
-      <div class="center">
+
+      <div class="sec-foot reveal">
+        <p class="note">Pratos, fotos e valores de exemplo — o menu muda todo dia. Chame no WhatsApp e eu te mando o que saiu hoje.</p>
         <a class="btn btn--wa" href="https://wa.me/5585988083844?text=Ol%C3%A1!%20Qual%20%C3%A9%20o%20card%C3%A1pio%20de%20hoje%3F" target="_blank" rel="noopener">Ver o cardápio de hoje</a>
       </div>
     </div>
   </section>
 
+  <!-- ============ A CASA ============ -->
   <section id="sobre" class="section section--alt">
-    <div class="container about">
-      <div class="about__text">
-        <h2 class="section__title left">Comida de casa, no meio da correria</h2>
-        <p>A <strong>Bisa Comida Caseira</strong> nasceu pra matar a saudade de comida boa. Nada de industrializado: aqui tudo é temperado e preparado no dia, do jeitinho que se faz em casa.</p>
-        <p>Estamos no <strong>Cais do Porto</strong>, em Fortaleza, com atendimento no almoço e no jantar. Venha sentar à mesa ou peça pra levar e receber quentinho.</p>
-        <ul class="checks">
-          <li>Comida fresca feita todos os dias</li>
-          <li>Porções generosas e pratos regionais</li>
-          <li>Pedido fácil e rápido pelo WhatsApp</li>
-          <li>Atendimento pra toda a família</li>
-        </ul>
-      </div>
-      <div class="about__img">
-        <img src="img/hero.jpg" alt="Prato de comida caseira" loading="lazy" />
-      </div>
-    </div>
-  </section>
-
-  <section id="avaliacoes" class="section">
-    <div class="container">
-      <h2 class="section__title">Quem prova, aprova</h2>
-      <div class="rating-badge">
-        <div class="rating-badge__num">4,9</div>
-        <div>
-          <div class="stars stars--lg">★★★★★</div>
-          <div class="muted">Avaliação no Google Maps</div>
+    <div class="container split">
+      <div class="split__media reveal">
+        <img src="img/hero.jpg" alt="Prato de comida caseira da Bisa" loading="lazy" />
+        <div class="float-card">
+          <span class="float-card__num">4,9</span>
+          <span class="float-card__stars">★★★★★</span>
+          <span class="float-card__label">no Google Maps</span>
         </div>
       </div>
-      <div class="quotes">
-        <blockquote>“Comida caseira gostosa, tempero na medida e atendimento simpático.”<cite>— Cliente no Google</cite></blockquote>
-        <blockquote>“Parece comida da minha mãe. Virei freguês.”<cite>— Cliente no Google</cite></blockquote>
-        <blockquote>“Melhor almoço do Cais do Porto, sem exagero.”<cite>— Cliente no Google</cite></blockquote>
+
+      <div class="split__text reveal">
+        <span class="eyebrow">A casa</span>
+        <h2>Comida de casa, no meio da correria</h2>
+        <p>A <strong>Bisa Comida Caseira</strong> existe pra matar a saudade de comida boa. Nada de industrializado: aqui tudo é temperado e preparado no dia, do jeitinho que se faz em casa.</p>
+        <p>Estamos no <strong>Cais do Porto</strong>, em Fortaleza, atendendo no almoço e no jantar. É só sentar à mesa ou pedir pra levar.</p>
+        <ul class="checks">
+          <li>Tempero feito todo dia, sem conservante</li>
+          <li>Pratos regionais e acompanhamento à vontade</li>
+          <li>Pedido rápido direto pelo WhatsApp</li>
+          <li>Porções para toda a família</li>
+        </ul>
+        <a class="btn btn--dark" href="#contato">Como chegar</a>
       </div>
-      <p class="section__note">Depoimentos ilustrativos — substituir pelos comentários reais do perfil no Google.</p>
     </div>
   </section>
 
-  <section id="contato" class="section section--alt">
-    <div class="container contact">
-      <div class="contact__info">
-        <h2 class="section__title left">Peça agora ou venha nos visitar</h2>
-        <ul class="contact__list">
-          <li><span class="ico">📍</span> R. São Bernardo do Campo, 396 — Cais do Porto, Fortaleza-CE</li>
-          <li><span class="ico">📞</span> <a href="tel:+5585988083844">(85) 98808-3844</a></li>
-          <li><span class="ico">🕒</span> Aberto até 23:00</li>
-        </ul>
-        <a class="btn btn--wa btn--lg" href="https://wa.me/5585988083844?text=Ol%C3%A1%2C%20Bisa!%20Quero%20fazer%20um%20pedido." target="_blank" rel="noopener">Falar no WhatsApp</a>
+  <!-- ============ AVALIAÇÕES ============ -->
+  <section id="avaliacoes" class="section">
+    <div class="container">
+      <div class="sec-head reveal">
+        <span class="eyebrow">Avaliações</span>
+        <h2>Quem prova, aprova</h2>
+        <p>A nota que você vê aqui é a mesma do Google Maps — e quem já foi, volta.</p>
       </div>
-      <div class="contact__map">
-        <iframe title="Mapa — Bisa Comida Caseira" loading="lazy"
+
+      <div class="rating reveal">
+        <div class="rating__score">
+          <span class="rating__num">4,9</span>
+          <span class="stars stars--lg">★★★★★</span>
+          <span class="muted">Avaliação no Google Maps</span>
+        </div>
+        <a class="btn btn--outline" href="https://www.google.com/maps/place/Bisa+Comida+Caseira" target="_blank" rel="noopener">Ver avaliações no Google</a>
+      </div>
+
+      <div class="quotes">
+        <blockquote class="quote reveal">
+          <span class="stars">★★★★★</span>
+          <p>“Comida gostosa, tempero na medida e atendimento simpático.”</p>
+          <cite>Cliente no Google</cite>
+        </blockquote>
+        <blockquote class="quote reveal">
+          <span class="stars">★★★★★</span>
+          <p>“Parece comida da minha mãe. Já virei freguês.”</p>
+          <cite>Cliente no Google</cite>
+        </blockquote>
+        <blockquote class="quote reveal">
+          <span class="stars">★★★★★</span>
+          <p>“Melhor almoço da região, sem exagero.”</p>
+          <cite>Cliente no Google</cite>
+        </blockquote>
+      </div>
+      <p class="note center reveal">Depoimentos de exemplo — substituí-los pelos comentários reais do perfil do Google.</p>
+    </div>
+  </section>
+
+  <!-- ============ CONTATO ============ -->
+  <section id="contato" class="section section--dark">
+    <div class="container split split--contact">
+      <div class="split__text reveal">
+        <span class="eyebrow">Contato</span>
+        <h2>Peça agora ou venha nos visitar</h2>
+
+        <ul class="contact">
+          <li>
+            <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a7 7 0 00-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 00-7-7zm0 9.5A2.5 2.5 0 1112 6.5a2.5 2.5 0 010 5z"/></svg>
+            <div><strong>Endereço</strong><span>R. São Bernardo do Campo, 396 — Cais do Porto, Fortaleza-CE</span></div>
+          </li>
+          <li>
+            <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M6.6 10.8a15.1 15.1 0 006.6 6.6l2.2-2.2a1 1 0 011-.25 11.4 11.4 0 003.6.57 1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.46.57 3.6a1 1 0 01-.25 1z"/></svg>
+            <div><strong>Telefone / WhatsApp</strong><a href="tel:+5585988083844">(85) 98808-3844</a></div>
+          </li>
+          <li>
+            <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 1010 10A10 10 0 0012 2zm1 10.6l4.3 2.5-.8 1.4L11 13.4V6h2z"/></svg>
+            <div><strong>Horário</strong><span>Aberto até as 23:00</span></div>
+          </li>
+        </ul>
+
+        <a class="btn btn--wa btn--lg" href="https://wa.me/5585988083844?text=Ol%C3%A1%2C%20Bisa!%20Quero%20fazer%20um%20pedido." target="_blank" rel="noopener">
+          <svg class="ico" viewBox="0 0 32 32" aria-hidden="true"><path fill="currentColor" d="M16 3C9.4 3 4 8.4 4 15c0 2.3.6 4.4 1.8 6.3L4 29l7.9-1.8c1.8 1 3.9 1.6 6.1 1.6 6.6 0 12-5.4 12-12S22.6 3 16 3zm0 21.8c-1.9 0-3.7-.5-5.3-1.5l-.4-.2-4.7 1.1 1.2-4.5-.3-.4A9.7 9.7 0 016.2 15C6.2 9.6 10.6 5.2 16 5.2S25.8 9.6 25.8 15 21.4 24.8 16 24.8zm5.4-7.2c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.7.9-.9 1.1-.2.2-.3.2-.6.1-1.4-.7-2.4-1.3-3.3-2.9-.3-.4.3-.4.8-1.3.1-.2 0-.4 0-.5s-.7-1.6-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.3 5.2 4.6 1.9.8 2.7.9 3.6.8.6-.1 1.7-.7 1.9-1.4.2-.7.2-1.3.2-1.4-.1-.1-.3-.2-.6-.3z"/></svg>
+          Falar no WhatsApp
+        </a>
+      </div>
+
+      <div class="split__map reveal">
+        <iframe title="Mapa — Bisa Comida Caseira" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
           src="https://maps.google.com/maps?q=Bisa%20Comida%20Caseira%20Cais%20do%20Porto%20Fortaleza&t=&z=16&ie=UTF8&iwloc=&output=embed"></iframe>
       </div>
     </div>
   </section>
 
-  <footer class="footer">
-    <div class="container footer__inner">
+  <!-- ============ CTA FINAL ============ -->
+  <section class="cta-band">
+    <div class="container cta-band__in reveal">
       <div>
-        <strong>Bisa Comida Caseira</strong><br>
-        <span class="muted">Comida de verdade, feita com carinho em Fortaleza-CE.</span>
+        <h2>Bateu a fome?</h2>
+        <p>Manda um zap que a gente já separa o seu pedido.</p>
       </div>
-      <div class="footer__links">
-        <a href="https://wa.me/5585988083844" target="_blank" rel="noopener">WhatsApp</a>
-        <a href="tel:+5585988083844">(85) 98808-3844</a>
-      </div>
+      <a class="btn btn--wa btn--lg" href="https://wa.me/5585988083844?text=Ol%C3%A1%2C%20Bisa!%20Quero%20fazer%20um%20pedido." target="_blank" rel="noopener">Pedir no WhatsApp</a>
     </div>
-    <div class="container muted small">© <span id="ano"></span> Bisa Comida Caseira. Página demonstrativa.</div>
-  </footer>
+  </section>
 
-  <a class="wa-float" href="https://wa.me/5585988083844?text=Ol%C3%A1%2C%20Bisa!%20Quero%20fazer%20um%20pedido." target="_blank" rel="noopener" aria-label="Pedir no WhatsApp">
-    <svg viewBox="0 0 32 32" width="30" height="30" aria-hidden="true"><path fill="#fff" d="M16 3C9.4 3 4 8.4 4 15c0 2.3.6 4.4 1.8 6.3L4 29l7.9-1.8c1.8 1 3.9 1.6 6.1 1.6 6.6 0 12-5.4 12-12S22.6 3 16 3zm0 21.8c-1.9 0-3.7-.5-5.3-1.5l-.4-.2-4.7 1.1 1.2-4.5-.3-.4A9.7 9.7 0 016.2 15C6.2 9.6 10.6 5.2 16 5.2S25.8 9.6 25.8 15 21.4 24.8 16 24.8zm5.4-7.2c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.7.9-.9 1.1-.2.2-.3.2-.6.1-1.4-.7-2.4-1.3-3.3-2.9-.3-.4.3-.4.8-1.3.1-.2 0-.4 0-.5s-.7-1.6-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.3 5.2 4.6 1.9.8 2.7.9 3.6.8.6-.1 1.7-.7 1.9-1.4.2-.7.2-1.3.2-1.4-.1-.1-.3-.2-.6-.3z"/></svg>
-  </a>
+</main>
 
-  <script>document.getElementById('ano').textContent = new Date().getFullYear();</script>
+<footer class="footer">
+  <div class="container footer__in">
+    <div class="footer__brand">
+      <span class="brand__mark">Bisa</span>
+      <span class="brand__sub">Comida Caseira</span>
+      <p class="muted">Comida de verdade, feita com carinho no Cais do Porto — Fortaleza-CE.</p>
+    </div>
+    <div class="footer__col">
+      <h4>Navegar</h4>
+      <a href="#cardapio">Cardápio</a>
+      <a href="#sobre">A casa</a>
+      <a href="#avaliacoes">Avaliações</a>
+      <a href="#contato">Contato</a>
+    </div>
+    <div class="footer__col">
+      <h4>Fale conosco</h4>
+      <a href="tel:+5585988083844">(85) 98808-3844</a>
+      <a href="https://wa.me/5585988083844" target="_blank" rel="noopener">WhatsApp</a>
+      <span class="muted">R. São Bernardo do Campo, 396</span>
+    </div>
+  </div>
+  <div class="container footer__bottom">
+    <span class="muted">© <span id="ano">2026</span> Bisa Comida Caseira</span>
+    <span class="muted">Página demonstrativa</span>
+  </div>
+</footer>
+
+<a class="wa-float" href="https://wa.me/5585988083844?text=Ol%C3%A1%2C%20Bisa!%20Quero%20fazer%20um%20pedido." target="_blank" rel="noopener" aria-label="Pedir no WhatsApp">
+  <svg viewBox="0 0 32 32" width="30" height="30" aria-hidden="true"><path fill="#fff" d="M16 3C9.4 3 4 8.4 4 15c0 2.3.6 4.4 1.8 6.3L4 29l7.9-1.8c1.8 1 3.9 1.6 6.1 1.6 6.6 0 12-5.4 12-12S22.6 3 16 3zm0 21.8c-1.9 0-3.7-.5-5.3-1.5l-.4-.2-4.7 1.1 1.2-4.5-.3-.4A9.7 9.7 0 016.2 15C6.2 9.6 10.6 5.2 16 5.2S25.8 9.6 25.8 15 21.4 24.8 16 24.8zm5.4-7.2c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.7.9-.9 1.1-.2.2-.3.2-.6.1-1.4-.7-2.4-1.3-3.3-2.9-.3-.4.3-.4.8-1.3.1-.2 0-.4 0-.5s-.7-1.6-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.3 5.2 4.6 1.9.8 2.7.9 3.6.8.6-.1 1.7-.7 1.9-1.4.2-.7.2-1.3.2-1.4-.1-.1-.3-.2-.6-.3z"/></svg>
+</a>
+
+<script>
+  document.getElementById('ano').textContent = new Date().getFullYear();
+
+  var burger = document.getElementById('burger');
+  var menu = document.getElementById('menu');
+  burger.addEventListener('click', function () {
+    var open = menu.classList.toggle('is-open');
+    burger.classList.toggle('is-open', open);
+    burger.setAttribute('aria-expanded', open ? 'true' : 'false');
+  });
+  menu.addEventListener('click', function (e) {
+    if (e.target.tagName === 'A') {
+      menu.classList.remove('is-open');
+      burger.classList.remove('is-open');
+      burger.setAttribute('aria-expanded', 'false');
+    }
+  });
+
+  var nav = document.getElementById('nav');
+  window.addEventListener('scroll', function () {
+    nav.classList.toggle('is-scrolled', window.scrollY > 20);
+  }, { passive: true });
+
+  var reveals = document.querySelectorAll('.reveal');
+  if ('IntersectionObserver' in window) {
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (en) {
+        if (en.isIntersecting) { en.target.classList.add('in'); io.unobserve(en.target); }
+      });
+    }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+    reveals.forEach(function (el) { io.observe(el); });
+  } else {
+    reveals.forEach(function (el) { el.classList.add('in'); });
+  }
+</script>
 </body>
 </html>
